@@ -8,12 +8,13 @@
 
 <br />
 
-[![NPM](https://img.shields.io/npm/v/react-loop-z.svg)](https://www.npmjs.com/package/react-loop-z) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-loop-z.svg)](https://www.npmjs.com/package/react-loop-z) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) ![downloads](https://img.shields.io/npm/dt/react-loop-z.svg)
 
 ---
 ## Description
-+ React wrapper loop
-+ Simple, clean
++ React wrapper loop.
++ Simple, clean.
++ Loop object.
 
 ## Installation
 
@@ -47,6 +48,20 @@ main props:
     }} */}
 />
 
+<For
+    of={[
+        { shortName: 'su1', name: '' },
+        { shortName: 'm', name: '' },
+        { shortName: 't', name: '' },
+        { shortName: 'w', name: '' },
+        { shortName: 't', name: '' },
+        { shortName: 'f', name: '' },
+        { shortName: 'sa2', name: '', dateClassName: 'abcd' },
+    ]}
+    keyName="shortName"  // require: only tag: for
+></For>
+
+// ****************************************************************
 // ****************************************************************
 //  Do (Careful with infinite loops.)
 <Do
@@ -62,6 +77,7 @@ main props:
 />
 
 // ****************************************************************
+// ****************************************************************
 //  While (Careful with infinite loops.)
 <While
     condition={() => {
@@ -74,6 +90,7 @@ main props:
     }}
 />
 
+// ****************************************************************
 // ****************************************************************
 //  MapLoop
 const map = new Map([
@@ -91,6 +108,7 @@ const map = new Map([
 />
 
 // ****************************************************************
+// ****************************************************************
 // SetLoop
 const set = new Set<string>([
     'foo',
@@ -106,11 +124,12 @@ const set = new Set<string>([
 />
 
 // ****************************************************************
+// ****************************************************************
 // ObjectLoop
 const param = {
-        'foo': 'bar',
-        'hello': 'world',
-    };
+    'foo': 'bar',
+    'hello': 'world',
+};
 <ObjectLoop
     of={param}
     {/* render={(value, key, index) => {
@@ -119,6 +138,7 @@ const param = {
         );
     }} */}
 />
+// if render is undefined, the object's display value
 ```
 <br />
 

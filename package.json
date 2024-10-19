@@ -1,6 +1,6 @@
 {
     "name": "react-loop-z",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "React wrapper loop. Simple and easy to use",
     "main": "build/index.js",
     "module": "build/index.esm.js",
@@ -35,7 +35,8 @@
         "map-loop",
         "set-loop",
         "object-loop",
-        "control-loop"
+        "control-loop",
+        "object-loop"
     ],
     "author": "Delpi.Kye",
     "license": "MIT",
