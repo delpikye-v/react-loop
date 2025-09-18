@@ -1,6 +1,7 @@
-import React from 'react';
-import { ILoopProps } from './ITypes';
+import React from "react";
+import { ILoopProps } from "./types";
 export interface IItemRenderProps extends ILoopProps {
-    item: any;
+    item: React.ReactNode;
 }
-export declare const ItemRender: React.FC<IItemRenderProps>;
+declare const ItemRender: React.FC<IItemRenderProps>;
+export default ItemRender;

@@ -1,5 +1,5 @@
-import React from 'react';
-import { ILoopConditionProps } from './ITypes';
+import React from "react";
+import { ILoopConditionProps } from "./types";
 /**
  * DoLoop component.
  * Careful with infinite loops.

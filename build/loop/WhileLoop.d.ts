@@ -1,7 +1,3 @@
-import React from 'react';
-import { ILoopConditionProps } from './ITypes';
-/**
- * WhileLoop component.
- * Careful with infinite loops.
- */
+import React from "react";
+import { ILoopConditionProps } from "./types";
 export declare const WhileLoop: React.FC<ILoopConditionProps>;

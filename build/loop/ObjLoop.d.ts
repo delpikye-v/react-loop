@@ -1,7 +1,7 @@
-import React from 'react';
-import { ILoopProps, IObjectProps } from './ITypes';
-export interface IObjectLoopProps<IObjectProps> extends ILoopProps {
-    of?: IObjectProps;
-    render?: (value: any, key: string, index: number) => React.ReactNode | JSX.Element | string;
+import React from "react";
+import { ILoopProps } from "./types";
+export interface IObjectLoopProps<T = React.ReactNode> extends ILoopProps {
+    of?: Record<string, T>;
+    render?: (value: T, key: string, index: number) => React.ReactNode;
 }
-export declare const ObjectLoop: React.FC<IObjectLoopProps<IObjectProps>>;
+export declare function ObjectLoop<T = React.ReactNode>({ of, as, propsTagAs, children, render, }: IObjectLoopProps<T>): React.ReactElement;

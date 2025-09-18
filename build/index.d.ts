@@ -5,7 +5,7 @@ export * from "./loop/ObjLoop";
 export * from "./loop/SetLoop";
 export * from "./loop/WhileLoop";
 export * from "./loop/ItemRender";
-export * from "./loop/ITypes";
+export * from "./loop/types";
 export { DoLoop as Do } from "./loop/DoLoop";
 export { ForLoop as For } from "./loop/ForLoop";
 export { ForLoop as ForEach } from "./loop/ForLoop";

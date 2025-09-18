@@ -1,7 +1,7 @@
-import React from 'react';
-import { ILoopProps } from './ITypes';
-export interface IMapLoopProps extends ILoopProps {
-    of: Map<any, any> | ReadonlyMap<any, any>;
-    render?: (value: any, key: any, index: number) => React.ReactNode | JSX.Element | string;
+import React from "react";
+import { ILoopProps } from "./types";
+export interface IMapLoopProps<K = any, V = React.ReactNode> extends ILoopProps {
+    of: Map<K, V> | ReadonlyMap<K, V>;
+    render?: (value: V, key: K, index: number) => React.ReactNode;
 }
-export declare const MapLoop: React.FC<IMapLoopProps>;
+export declare function MapLoop<K = any, V = React.ReactNode>({ of, as, propsTagAs, children, render, }: IMapLoopProps<K, V>): React.ReactElement;
